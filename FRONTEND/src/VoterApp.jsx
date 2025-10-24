@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 import {
@@ -19,7 +20,7 @@ import {
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function VoterApp() {
-  const baseUrl = `http://localhost:2000`;
+  const baseUrl = `http://localhost:2025`;
   const [voter, setVoter] = useState({
     id: "",
     name: "",
@@ -105,10 +106,11 @@ export default function VoterApp() {
   return (
     <Box className="container mt-4">
       <Typography variant="h4" align="center" gutterBottom>
-        🗳️ Voter Management System
+        🗳 Voter Management System
       </Typography>
 
-      <div className="row">
+Bhargavi, [10/24/2025 17:31]
+<div className="row">
         {/* Add Voter Form */}
         <div className="col-md-6 mb-4">
           <Card elevation={4}>
@@ -238,7 +240,8 @@ export default function VoterApp() {
         </div>
       </div>
 
-      {/* Display All Voters Automatically */}
+Bhargavi, [10/24/2025 17:31]
+{/* Display All Voters Automatically */}
       {allVoters.length > 0 && (
         <TableContainer component={Paper} elevation={5}>
           <Table>
